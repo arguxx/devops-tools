@@ -1,6 +1,6 @@
 # please init shebang
 
-echo "nexus install begin :) -- Argu"
+echo "nexus installation begin :) -- Argu"
 yum update -y
 yum install -y wget java-1.8.0-openjdk curl
 wget https://download.sonatype.com/nexus/3/nexus-3.62.0-01-unix.tar.gz
