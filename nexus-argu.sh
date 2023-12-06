@@ -1,6 +1,6 @@
 # please init shebang
 
-echo "nexus install begin"
+echo "nexus install begin :) -- Argu"
 yum update -y
 yum install -y wget java-1.8.0-openjdk curl
 wget https://download.sonatype.com/nexus/3/nexus-3.62.0-01-unix.tar.gz
@@ -34,6 +34,7 @@ systemctl enable --now nexus.service
 
 sudo firewall-cmd --zone=public --add-port=8087/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=8086/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=8081/tcp --permanent
 sudo firewall-cmd --reload
 
-echo "installation success :) -argu"
+echo "installation success :) -- argu"
