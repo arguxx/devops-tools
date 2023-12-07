@@ -24,3 +24,5 @@ sudo systemctl enable --now docker
 firewall-cmd --zone=public --add-masquerade --permanent 
 firewall-cmd --zone=public --add-port=2375/tcp --permanent
 firewall-cmd --reload
+
+echo "installation success :) -- Argu"

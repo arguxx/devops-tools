@@ -37,4 +37,8 @@ sudo firewall-cmd --zone=public --add-port=8086/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=8081/tcp --permanent
 sudo firewall-cmd --reload
 
-echo "installation success :) -- argu"
+echo "username: admin"
+echo "password:"
+cat /opt/nexus/sonatype-work/nexus3/admin.password
+echo "this password only valid for 24h/n"
+echo "installation success :) -- Argu"

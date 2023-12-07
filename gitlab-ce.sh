@@ -20,7 +20,6 @@ LC_CTYPE="en_US.UTF-8"
 
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 
-
 IP_ADDRESS=$(echo $(ip addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'))
 sudo EXTERNAL_URL="http://$IP_ADDRESS" yum install -y gitlab-ce
 
